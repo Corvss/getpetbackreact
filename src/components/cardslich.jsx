@@ -64,7 +64,7 @@ const Cardslich = (props) => {
         <div>
 
             <div className="card h-100">
-                <img src={'https://pets.сделай.site'+props.data.photos} className="card-img-top wwww" alt="..." />
+                <img src={'https://pets.сделай.site'+props.data.photos} className="card-img-top wwww" style={{"height":"300px"}} alt="..." />
                 <div className="card-body ft">
                     <div>
                         <div className="izmen">
@@ -102,7 +102,7 @@ const Cardslich = (props) => {
                                 <label htmlFor="inputVie">Фото 3:</label>
                                 <input name='photos3' type="file" className="form-control-file ddd" id="exampleFormControlFile3"   accept="image/png" />
                                 <br />
-                                <label htmlFor="inputView">Кличка:</label>
+                                <label htmlFor="inputView">Клеймо:</label>
                                 <input name='mark' type="text" className="form-control" id="inputMark" />
                                 <br />
                                 <label htmlFor="inputView">Описание:</label>

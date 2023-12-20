@@ -22,7 +22,7 @@ const AddPage = () => {
             .then(result => {
                 console.log(result);
                 if (result == 200) {
-                    let message = 'Вы успешно выложили объявление!!!';
+                    let message = 'Вы успешно выложили объявление!';
                     blocks.current.innerText = message;
                     blocks.current.style.background = "#34C924"
                     blocks.current.style.color = "black";
