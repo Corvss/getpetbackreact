@@ -3,13 +3,13 @@ import Header from "../components/header";
 import Login from "../components/log";
 
 const LoginPage = () => {
-    return ( 
+    return (
         <div>
-        <Header/>
-        <Login/>
-        <Footer/>
+            <Header />
+            <Login />
+            <Footer />
         </div>
-     );
+    );
 }
- 
+
 export default LoginPage;

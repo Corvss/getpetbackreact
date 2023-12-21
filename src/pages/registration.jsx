@@ -3,13 +3,13 @@ import Header from "../components/header";
 import Registration from "../components/reg";
 
 const RegPage = () => {
-    return ( 
+    return (
         <div>
-        <Header/>
-        <Registration/>
-        <Footer/>
+            <Header />
+            <Registration />
+            <Footer />
         </div>
-     );
+    );
 }
- 
+
 export default RegPage;

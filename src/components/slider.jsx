@@ -4,7 +4,7 @@ const Slider = (props) => {
         <div className={props.css_class}>
             <h2 className='text-center text-white m-2'>{props.data.kind}</h2>
             <p className='text-center'>{props.data.description}</p>
-            <img src={'https://pets.сделай.site'+props.data.image} className="d-block m-auto" alt="photo_pets" style={{height: '200px'}}/>
+            <img src={'https://pets.сделай.site' + props.data.image} className="d-block m-auto" alt="photo_pets" style={{ height: '200px' }} />
         </div>
     );
 };

@@ -5,10 +5,10 @@ const Cards = (props) => {
 
     const navigate = useNavigate();
 
-    return(
+    return (
         <div className="col">
             <div className="card h-100">
-                <img src={'https://pets.сделай.site'+props.data.photos} className="card-img-top wwww" style={{"height":"450px"}} alt="..."/>
+                <img src={'https://pets.сделай.site' + props.data.photos} className="card-img-top wwww" style={{ "height": "450px" }} alt="..." />
                 <div className="card-body ft">
                     <div>
                         <h5 className="card-title text-white">{props.data.name}</h5>
@@ -22,7 +22,7 @@ const Cards = (props) => {
                         <p className="card-text">Дата:{props.data.date}</p>
                     </div>
 
-                    <div><button onClick={() => {navigate("/InfCard", { state: props.data.id })}} className="btn bbtn ff m-auto mt-3" >Подробнее</button></div>
+                    <div><button onClick={() => { navigate("/InfCard", { state: props.data.id }) }} className="btn bbtn ff m-auto mt-3" >Подробнее</button></div>
                 </div>
             </div>
         </div>

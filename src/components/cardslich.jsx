@@ -64,7 +64,7 @@ const Cardslich = (props) => {
         <div>
 
             <div className="card h-100">
-                <img src={'https://pets.сделай.site'+props.data.photos} className="card-img-top wwww" style={{"height":"300px"}} alt="..." />
+                <img src={'https://pets.сделай.site' + props.data.photos} className="card-img-top wwww" style={{ "height": "300px" }} alt="..." />
                 <div className="card-body ft">
                     <div>
                         <div className="text-white">
@@ -81,7 +81,7 @@ const Cardslich = (props) => {
                 </div>
             </div>
 
-            <div className="modal fade" id={"exampleModal1"  + props.data.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={"exampleModal1" + props.data.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content bg-black text-white">
                         <div className="modal-header">
@@ -97,10 +97,10 @@ const Cardslich = (props) => {
                                 <input name='photos1' type="file" className="form-control-file ddd" id="exampleFormControlFile1" accept="image/png" />
                                 <br />
                                 <label htmlFor="inputView">Фото 2:</label>
-                                <input name='photos2' type="file" className="form-control-file ddd" id="exampleFormControlFile2"  accept="image/png"/>
+                                <input name='photos2' type="file" className="form-control-file ddd" id="exampleFormControlFile2" accept="image/png" />
                                 <br />
                                 <label htmlFor="inputVie">Фото 3:</label>
-                                <input name='photos3' type="file" className="form-control-file ddd" id="exampleFormControlFile3"   accept="image/png" />
+                                <input name='photos3' type="file" className="form-control-file ddd" id="exampleFormControlFile3" accept="image/png" />
                                 <br />
                                 <label htmlFor="inputView">Клеймо:</label>
                                 <input name='mark' type="text" className="form-control" id="inputMark" />

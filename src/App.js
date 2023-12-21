@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path={'/'} element={<Main/>}/>
-        <Route path={'/cabinet'} element={<CabPage/>}/>
-        <Route path={'/search'} element={<SearchPage/>}/>
-        <Route path={'/add'} element={<AddPage/>}/>
-        <Route path={'/login'} element={<LoginPage/>}/>
-        <Route path={'/registration'} element={<RegPage/>}/>
-        <Route path={'/infcard'} element={<InfCard/>}/>
+        <Route path={'/'} element={<Main />} />
+        <Route path={'/cabinet'} element={<CabPage />} />
+        <Route path={'/search'} element={<SearchPage />} />
+        <Route path={'/add'} element={<AddPage />} />
+        <Route path={'/login'} element={<LoginPage />} />
+        <Route path={'/registration'} element={<RegPage />} />
+        <Route path={'/infcard'} element={<InfCard />} />
       </Routes>
     </div>
   );

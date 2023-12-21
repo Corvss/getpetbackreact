@@ -47,7 +47,7 @@ function AnimalCarousel() {
     return (
         <div>
             <Loader display={show} />
-            <div id="carouselExampleIndicators" className="carousel slide w-50 m-auto text-white" data-bs-ride="carousel" style={{ minWidth: '250'}}>
+            <div id="carouselExampleIndicators" className="carousel slide w-50 m-auto text-white" data-bs-ride="carousel" style={{ minWidth: '250' }}>
                 <div className="carousel-indicators">
                     {indicators}
                 </div>

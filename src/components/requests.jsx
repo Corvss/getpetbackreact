@@ -12,4 +12,4 @@ const QuickSearchRequest = (query, card, setCard) => {
         .catch(error => console.log('error', error));
 }
 
-export { QuickSearchRequest};
+export { QuickSearchRequest };

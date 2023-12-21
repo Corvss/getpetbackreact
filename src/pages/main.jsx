@@ -6,8 +6,8 @@ import AnimalCarousel from "../components/carusel";
 
 const Main = () => {
 
-    let [card, setCard]=useState({data:{orders:[]}});
-    useEffect(()=>req_card(card, setCard), []);
+    let [card, setCard] = useState({ data: { orders: [] } });
+    useEffect(() => req_card(card, setCard), []);
     function req_card(card, setCard) {
 
 
@@ -21,26 +21,26 @@ const Main = () => {
             .catch(error => console.log('error', error));
 
     }
-    let  cards=card.data.orders.map((order, index)=>{
-        return<Cards data={order}/>;
+    let cards = card.data.orders.map((order, index) => {
+        return <Cards data={order} />;
     })
 
-    return ( 
+    return (
         <div className="bg-black">
-            <Header/>
-            <h2 className="text-center text-white bg-dark mb-md-0" style={{padding: '1em'}}>Найденные животные</h2>
-            <AnimalCarousel/>
+            <Header />
+            <h2 className="text-center text-white bg-dark mb-md-0" style={{ padding: '1em' }}>Найденные животные</h2>
+            <AnimalCarousel />
             <h2 className="text-center text-white bg-primary mb-lg-0 p-3 bg-dark">Карточки потерянных животных</h2>
             <div className="album py-5 bg-dark">
-            <div className="container">
-             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                          {cards}            
-                      </div>
+                <div className="container">
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        {cards}
                     </div>
-                  </div>
-            <Footer/>
+                </div>
+            </div>
+            <Footer />
         </div>
-     );
+    );
 }
- 
+
 export default Main;

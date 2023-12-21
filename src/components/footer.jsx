@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import New from "./news";
 
 const Footer = () => {
-    return ( 
-        <main className="bg-black">
-        <div className="container card-text">
+  return (
+    <main className="bg-black">
+      <div className="container card-text">
         <footer className="py-5">
           <div className="row">
             <div className="col-6 col-md-2 mb-3">
@@ -21,19 +21,19 @@ const Footer = () => {
                 <li className="nav-item mb-2"><Link to={"/registration"} className="nav-link p-0 card-text">Регистрация</Link></li>
               </ul>
             </div>
-            <New/>
+            <New />
           </div>
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2023 GetPetBack. Все права защищены.</p>
-            <ul className="list-unstyled d-flex" style={{width: '22%'}}>
-              <li style={{padding: '1em'}}><a className="link-body-emphasis" href="#"><img src={twitter} width="50px" /></a></li>
-              <li style={{padding: '1em'}}><a className="link-body-emphasis" href="#"><img src={facebook} width="50px" /></a></li>
-              <li style={{padding: '1em'}}><a className="link-body-emphasis" href="#"><img src={instagram} width="50px" /></a></li>
+            <ul className="list-unstyled d-flex" style={{ width: '22%' }}>
+              <li style={{ padding: '1em' }}><a className="link-body-emphasis" href="#"><img src={twitter} width="50px" /></a></li>
+              <li style={{ padding: '1em' }}><a className="link-body-emphasis" href="#"><img src={facebook} width="50px" /></a></li>
+              <li style={{ padding: '1em' }}><a className="link-body-emphasis" href="#"><img src={instagram} width="50px" /></a></li>
             </ul>
           </div>
         </footer>
       </div>
-      </main>
-    );
-  }
+    </main>
+  );
+}
 export default Footer;

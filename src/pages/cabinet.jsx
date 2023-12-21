@@ -155,19 +155,25 @@ const CabPage = () => {
     }
 
     return (
-        <div className="bg-black" style={{ minHeight: '70vh' }}>
+        <div className="bg-dark" style={{ minHeight: '70vh' }}>
             <Header />
             <section>
                 <div className="container-fluid">
                     <div className="container-fluid">
                         <div className="container-fluid">
-                            <div className="card bg-black">
+                            <div className="card bg-black mt-5 p-5">
                                 <div className="rounded-top text-white bg-black d-flex  justify-content-center" style={{ height: '200px' }}>
-                                    <div className="ms-4 d-flex flex-column" style={{ marginTop: '7em' }}>
+                                    <div className="ms-4 d-flex flex-column">
                                         <img src={avatar} alt="Generic placeholder image" className="img-fluid img-thumbnail mt-4 mb-2 bg-black" style={{ width: '150px' }} />
+                                                <div className="d-flex text-center justify-content-center">
+                                                    <div>
+                                                        <p className="small mb-0 card-text">{day}</p>
+                                                        <p className="mb-1 h5">Дней на сайте</p>
+                                                    </div>
+                                                </div>
                                     </div>
-                                    <div className="ms-3" style={{ marginTop: '130px', zIndex: 1 }}>
-                                        <h2>{user.name}</h2>
+                                    <div className="ms-3">
+                                        <h2 className="ms-4">{user.name}</h2>
                                         <div className="container-fluid m-2 p-2" style={{ width: '500px' }}>
                                             <div className="col-sm-9 m-2">
                                                 <div className="d-flex justify-content-between">
@@ -190,10 +196,9 @@ const CabPage = () => {
                                                     <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5" className="btn brd" >Выйти из аккаунта</button>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
-
-
 
                                     <div className="modal" id="exampleModal5" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered">
@@ -268,19 +273,10 @@ const CabPage = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
-            <div className="p-4 card-text">
-                <div className="d-flex text-center py-1 justify-content-center" style={{ marginTop: '7em' }}>
-                    <div className="px-3">
-                        <p className="small mb-0 card-text">{day}</p>
-                        <p className="mb-1 h5">Дней на сайте</p>
-                    </div>
 
-                </div>
-            </div>                    
             <h2 className="text-center text-white bbtn m-2">Объявления пользователя</h2>
-            <div className="row row-cols-1 row-cols-md-3 g-4 w-75 m-auto">
+            <div className="row row-cols-1 row-cols-md-3 g-4 w-75 m-3">
                 {cards.map((item, index) => <Cardslich data={item} key={index} />)}
             </div>
             <Footer />

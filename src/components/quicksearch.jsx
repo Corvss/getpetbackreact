@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { QuickSearchRequest } from "./requests";
 
@@ -60,7 +60,7 @@ const QuickSearch = () => {
                 value={searchTerm}
                 onChange={onChange}
             />
-            <button className="btn bbtn mx-2" type="submit">Поиск</button>
+            <button className="btn bbtn me-3" type="submit">Поиск</button>
 
         </form>
     );
