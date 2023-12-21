@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../image/logo.png'
 import { Link } from "react-router-dom";
+import QuickSearch from "./quicksearch";
 
 const Header = () => {
     return ( 
@@ -17,16 +18,7 @@ const Header = () => {
               <li><Link to={"/search"} className="nav-link px-2 text-white">Поиск по объявлениям</Link></li>
               <li><Link to={"/add"} className="nav-link px-2 text-white">Добавить объявление</Link></li>
             </ul>
-            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" className="form-control form-control-dark" list="pets" placeholder="Поиск..." aria-label="Search" />
-              <datalist id="pets">
-                <option value="Кошка">
-                </option><option value="Собака">
-                </option><option value="Корова">
-                </option><option value="Хомяк">
-                </option><option value="Птица">
-                </option></datalist>
-            </form>
+            <QuickSearch/>
             <div className="text-end d-flex">
               <Link to={"/login"} className="btn btn-outline-light me-2">Вход</Link>
               <Link to={"/registration"} className="btn bbtn">Регистрация</Link>

@@ -5,7 +5,7 @@ import RegPage from "./pages/registration";
 import CabPage from "./pages/cabinet";
 import AddPage from "./pages/add";
 import SearchPage from "./pages/search";
-import CardPage from "./pages/cardpage";
+import InfCard from "./pages/infcard";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path={'/add'} element={<AddPage/>}/>
         <Route path={'/login'} element={<LoginPage/>}/>
         <Route path={'/registration'} element={<RegPage/>}/>
-        <Route path={'/card'} element={<CardPage/>}/>
+        <Route path={'/infcard'} element={<InfCard/>}/>
       </Routes>
     </div>
   );

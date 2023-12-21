@@ -197,7 +197,7 @@ const CabPage = () => {
 
                                     <div className="modal" id="exampleModal5" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered">
-                                            <div className="modal-content">
+                                            <div className="modal-content bg-black">
                                                 <div className="modal-header">
                                                     <h5 className="modal-title" id="exampleModalLabel">Вы уверены что хотите выйти?</h5>
                                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -276,12 +276,12 @@ const CabPage = () => {
                         <p className="small mb-0 card-text">{day}</p>
                         <p className="mb-1 h5">Дней на сайте</p>
                     </div>
-                    <div className="px-3">
-                        <div className="row row-cols-1 row-cols-md-3 g-4 w-75 m-auto">
-                            {cards.map((item, index) => <Cardslich data={item} key={index} />)}
-                        </div>
-                    </div>
+
                 </div>
+            </div>                    
+            <h2 className="text-center text-white bbtn m-2">Объявления пользователя</h2>
+            <div className="row row-cols-1 row-cols-md-3 g-4 w-75 m-auto">
+                {cards.map((item, index) => <Cardslich data={item} key={index} />)}
             </div>
             <Footer />
         </div>
